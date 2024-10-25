@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practica2.2</string>
+    <string name="pulsar">¡Púlsame!</string>
+    <plurals name="numPulsaciones">
+        <item quantity="one">Pulsado %d vez</item>
+        <item quantity="other">Pulsado %d veces</item>
+    </plurals>
+</resources>
