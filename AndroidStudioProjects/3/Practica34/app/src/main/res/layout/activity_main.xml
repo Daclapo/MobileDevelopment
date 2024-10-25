@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1">
+<!--        android:layout_above="@+id/linearLayout1"-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etiqueta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje" />
+
+            <CheckBox
+                android:id="@+id/idl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lunes"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/idm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/martes"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/idx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/miercoles"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/idj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jueves"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/idv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/viernes"
+                android:checked="false"
+                android:onClick="onViernes"/>
+            <CheckBox
+                android:id="@+id/ids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sabado"
+                android:onClick="onSabado"/>
+            <CheckBox
+                android:id="@+id/idd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/domingo"
+                android:onClick="onDomingo"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultado1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="@string/queja1"/>
+
+                <TextView
+                    android:id="@+id/resultado2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="@string/queja2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

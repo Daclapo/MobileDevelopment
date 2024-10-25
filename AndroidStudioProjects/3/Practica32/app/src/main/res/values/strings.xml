@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Practica3.2</string>
+    <string name="mensaje">¿Que sistema operativo prefieres para tu móvil?:</string>
+    <string name="android">Android</string>
+    <string name="ios">iOS</string>
+    <string name="windows">Windows Mobile</string>
+    <string name="symbian">Symbian</string>
+    <string name="otros">Otros</string>
+    <string name="and">Hola que tal</string>
+    <string name="io">Bien y tu</string>
+    <string name="win">Bien tambien</string>
+    <string name="sym">Como esta el perro</string>
+    <string name="otr">Está muy bien.¿Cual?</string>
+    <string name="idboton">Aceptar</string>
+</resources>

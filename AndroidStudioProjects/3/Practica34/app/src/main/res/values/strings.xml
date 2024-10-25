@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Practica3.4</string>
+    <string name="mensaje">Que dias quieres que suene la alarma?:</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+    <string name="queja1">El sabado no</string>
+    <string name="queja2">El domingo no</string>
+    <string name="idboton">Aceptar</string>
+    <string name="mensajeviernes">Hola es viernes.</string>
+    <string name="mensajeviernesno">¡EL VIERNES NO!.</string>
+</resources>

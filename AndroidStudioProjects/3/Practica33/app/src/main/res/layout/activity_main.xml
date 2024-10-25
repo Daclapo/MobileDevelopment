@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--ScrollView-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/etiqueta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mensaje" />
+
+        <CheckBox
+                android:id="@+id/idl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lunes"
+                android:checked="true"/>
+        <CheckBox
+            android:id="@+id/idm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/martes"
+            android:checked="true"/>
+        <CheckBox
+            android:id="@+id/idx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miercoles"
+            android:checked="true"/>
+        <CheckBox
+            android:id="@+id/idj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jueves"
+            android:checked="true"/>
+        <CheckBox
+            android:id="@+id/idv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/viernes"
+            android:checked="true"/>
+        <CheckBox
+            android:id="@+id/ids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sabado"
+            android:onClick="onSabado"/>
+        <CheckBox
+            android:id="@+id/idd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/domingo"
+            android:onClick="onDomingo"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultado1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="@string/queja1"/>
+
+            <TextView
+                android:id="@+id/resultado2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="@string/queja2"/>
+
+        </LinearLayout>
+
+
+        <!-- <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idboton"
+            android:onClick="onPulsame"/> -->
+
+
+    </LinearLayout>
+</ScrollView>

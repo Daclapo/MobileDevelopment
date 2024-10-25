@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/etiqueta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mensaje" />
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/idandroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/android"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/idios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ios"/>
+        <RadioButton
+            android:id="@+id/idwindows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/windows"/>
+        <RadioButton
+            android:id="@+id/idsymbian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/symbian"/>
+        <RadioButton
+            android:id="@+id/idotro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otros"/>
+    </RadioGroup>
+
+
+    <!-- <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/idboton"
+        android:onClick="onPulsame"/> -->
+
+
+</LinearLayout>
