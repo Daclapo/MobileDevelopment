@@ -1,0 +1,15 @@
+<resources>
+    <string name="hePensadoNumero">Estoy pensando en un número entre 1 y 100.</string>
+    <string name="intentalo">Inténtalo:</string>
+    <string name="cual">¿Cuál crees que es?</string>
+    <string name="ganaste">¡Felicidades! Has acertado en </string>
+    <plurals name="intentosFinales">
+        <item quantity="one">%d intento.</item>
+        <item quantity="other">%d intentos.</item>
+    </plurals>
+    <string name="mayor">El número es mayor que %1$d</string>
+    <string name="menor">El número es menor que %1$d</string>
+    <string name="intentos">Llevas %1$d intentos.</string>
+    <string name="mensaje">Has pulsado %1$d veces</string>
+    <string name="app_name">AdivinaMiNumeroDavidClarkson</string>
+</resources>
