@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Practica4.1</string>
+    <string name="pulsar">Pulsame</string>
+    <string name="dos">Segunda Ventana</string>
+    <string name="mensaje">Hola que tal, estas en la segunda ventana</string>
+</resources>
