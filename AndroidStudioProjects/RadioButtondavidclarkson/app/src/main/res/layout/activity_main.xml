@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView1">
+        <!--        android:layout_above="@+id/linearLayout1"-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etiqueta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pregunta" />
+            <TextView
+                android:id="@+id/etiqueta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comunidad" />
+
+            <RadioGroup
+                android:id="@+id/grupo"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <RadioButton
+                    android:id="@+id/andalucia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Andalucía"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Andalucia" />
+
+                <RadioButton
+                    android:id="@+id/aragon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aragón"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Aragon" />
+
+                <RadioButton
+                    android:id="@+id/asturias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asturias"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Asturias" />
+
+                <RadioButton
+                    android:id="@+id/cantabria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantabria"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Cantabria" />
+
+                <RadioButton
+                    android:id="@+id/castillalamancha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Castilla la Mancha"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Castilla_La_Mancha" />
+
+                <RadioButton
+                    android:id="@+id/castillayleon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Castilla y León"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Castilla_y_Leon" />
+
+                <RadioButton
+                    android:id="@+id/catalunia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cataluña"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Cataluna" />
+
+                <RadioButton
+                    android:id="@+id/ceuta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ceuta"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Ceuta" />
+
+                <RadioButton
+                    android:id="@+id/comvalenciana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comunidad Valenciana"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Comunidad_Valenciana" />
+                <RadioButton
+                    android:id="@+id/extremadura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extremadura"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Extremadura" />
+
+                <RadioButton
+                    android:id="@+id/galicia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Galicia"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Galicia" />
+
+                <RadioButton
+                    android:id="@+id/islas_baleares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Islas Baleares"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Islas_Baleares" />
+
+                <RadioButton
+                    android:id="@+id/islas_canarias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Islas Canarias"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Islas_Canarias" />
+
+                <RadioButton
+                    android:id="@+id/la_rioja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La Rioja"
+                    android:button="@null"
+                    android:drawableTop="@drawable/La_Rioja" />
+
+                <RadioButton
+                    android:id="@+id/madrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Madrid"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Madrid" />
+
+                <RadioButton
+                    android:id="@+id/melilla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Melilla"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Melilla" />
+
+                <RadioButton
+                    android:id="@+id/murcia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Murcia"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Murcia" />
+
+                <RadioButton
+                    android:id="@+id/navarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Navarra"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Navarra" />
+
+                <RadioButton
+                    android:id="@+id/pais_vasco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="País Vasco"
+                    android:button="@null"
+                    android:drawableTop="@drawable/Pais_Vasco" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultado1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="@string/correcto"/>
+
+                <TextView
+                    android:id="@+id/resultado2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="@string/incorrecto"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

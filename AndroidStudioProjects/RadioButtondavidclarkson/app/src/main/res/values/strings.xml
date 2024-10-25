@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RadioButtondavidclarkson</string>
+    <string name="pregunta">Donde se encuentra: </string>
+    <string name="comunidad">Comunidad</string>
+
+    <string name="correcto">Correcto, has marcado la comunidad indicada</string>
+    <string name="incorrecto">Incorreto, esa no es la comunidad indicada. Sigue intentandolo</string>
+</resources>
