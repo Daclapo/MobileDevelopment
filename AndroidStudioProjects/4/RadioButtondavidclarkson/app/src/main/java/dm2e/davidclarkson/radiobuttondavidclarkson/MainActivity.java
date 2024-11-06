@@ -1,5 +1,6 @@
 package com.example.radiobuttondavidclarkson;
 
+
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.widget.RadioButton;
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void verificarRespuesta(int checkedId) {
+        grupoRadio.setOnCheckedChangeListener(null);
+
         RadioButton radioButtonSeleccionado = findViewById(checkedId);
         if (radioButtonSeleccionado != null) {
             String idComunidadSeleccionada = getResources().getResourceEntryName(checkedId);
@@ -77,7 +80,10 @@ public class MainActivity extends AppCompatActivity {
                 dialogo.setMessage(getString(R.string.incorrecto));
             }
 
-            dialogo.setPositiveButton("OK", (dialog, which) -> siguienteComunidad());
+            dialogo.setPositiveButton("OK", (dialog, which) -> {
+                siguienteComunidad();
+                grupoRadio.setOnCheckedChangeListener((group, newCheckedId) -> verificarRespuesta(newCheckedId));
+            });
             dialogo.show();
         }
     }
