@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pregunta" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregunta"
+        android:layout_above="@+id/aceptar"
+        >
+        <RadioGroup
+            android:id="@+id/preferenciasMelodia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/silencio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/silencio" />
+
+            <RadioButton
+                android:id="@+id/andromeda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/andromeda" />
+
+            <RadioButton
+                android:id="@+id/basicBell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basicBell" />
+
+            <RadioButton
+                android:id="@+id/cassiopeia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cassiopeia" />
+
+            <RadioButton
+                android:id="@+id/chime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chime" />
+        </RadioGroup>
+    </ScrollView>
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onAceptar"
+        android:text="@android:string/ok" />
+</RelativeLayout>

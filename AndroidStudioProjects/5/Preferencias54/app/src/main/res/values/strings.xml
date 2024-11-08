@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Preferencias5.4</string>
+
+    <string name="pregunta">¿Qué melodía prefieres para tu móvil?</string>
+    <string name="silencio">Silencio</string>
+    <string name="andromeda">Andromeda</string>
+    <string name="basicBell">Basic Bell</string>
+    <string name="cassiopeia">Cassiopeia</string>
+    <string name="chime">Chime</string>
+</resources>
