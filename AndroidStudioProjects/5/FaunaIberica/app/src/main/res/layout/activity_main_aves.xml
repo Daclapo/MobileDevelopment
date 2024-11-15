@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityAves">
+
+  <!-- Título con fondo negro -->
+  <TextView
+      android:id="@+id/titleTextView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#000000"
+      android:textColor="#FFFFFF"
+      android:gravity="start"
+      android:padding="10dp"
+      android:text="Rapaces y Carroñeras"
+      android:textSize="23sp" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Lista de Rapaces y Carroñeros"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:padding="16dp" />
+
+  <!-- RadioGroup con RadioButtons para las aves rapaces -->
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_gravity="center_vertical"
+      android:layout_marginBottom="150dp"
+      android:id="@+id/radioGroupAves"
+      android:padding="20dp">
+
+    <!-- RadioButton para Águila -->
+    <RadioButton
+        android:id="@+id/radioAguila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/aguila"
+        android:drawablePadding="10dp"
+        android:text="Águila"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <!-- RadioButton para Búho -->
+    <RadioButton
+        android:id="@+id/radioBuho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/buho"
+        android:drawablePadding="10dp"
+        android:text="Búho"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <!-- RadioButton para Cernícalo -->
+    <RadioButton
+        android:id="@+id/radioCernicalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/cernicalo"
+        android:drawablePadding="10dp"
+        android:text="Cernícalo"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <!-- RadioButton para Halcón -->
+    <RadioButton
+        android:id="@+id/radioHalcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/halcon"
+        android:drawablePadding="10dp"
+        android:text="Halcón"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <!-- RadioButton para Quebrantahuesos -->
+    <RadioButton
+        android:id="@+id/radioQuebrantahuesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/quebrantahuesos"
+        android:drawablePadding="10dp"
+        android:text="Quebrantahuesos"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <!-- RadioButton para Buitre -->
+    <RadioButton
+        android:id="@+id/radioBuitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/buitre"
+        android:drawablePadding="10dp"
+        android:text="Buitre"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+  </RadioGroup>
+</LinearLayout>

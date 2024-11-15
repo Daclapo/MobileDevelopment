@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityCarnivoros">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="Carnívoros"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Carnívoros"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <!-- RadioGroup con RadioButtons para los carnívoros -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="150dp"
+        android:id="@+id/radioGroupCarnivoros"
+        android:padding="20dp">
+
+        <!-- RadioButton para Comadreja -->
+        <RadioButton
+            android:id="@+id/radioComadreja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/comadreja"
+            android:drawablePadding="10dp"
+            android:text="Comadreja"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Gineta -->
+        <RadioButton
+            android:id="@+id/radioGineta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/gineta"
+            android:drawablePadding="10dp"
+            android:text="Gineta"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Nutria -->
+        <RadioButton
+            android:id="@+id/radioNutria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/nutria"
+            android:drawablePadding="10dp"
+            android:text="Nutria"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Lobo -->
+        <RadioButton
+            android:id="@+id/radioLobo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/lobo"
+            android:drawablePadding="10dp"
+            android:text="Lobo"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Zorro -->
+        <RadioButton
+            android:id="@+id/radioZorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/zorro"
+            android:drawablePadding="10dp"
+            android:text="Zorro"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Oso -->
+        <RadioButton
+            android:id="@+id/radioOso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/oso"
+            android:drawablePadding="10dp"
+            android:text="Oso"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+
+        <!-- RadioButton para Lince -->
+        <RadioButton
+            android:id="@+id/radioLince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/lince"
+            android:drawablePadding="10dp"
+            android:text="Lince"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp" />
+    </RadioGroup>
+</LinearLayout>
