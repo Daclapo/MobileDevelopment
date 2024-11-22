@@ -17,10 +17,10 @@
         android:textColor="#FFFFFF"
         android:gravity="start"
         android:padding="10dp"
-        android:text="Fauna Ibérica"
+        android:text="@string/titulo_fauna_iberica"
         android:textSize="23dp" />
 
-    <!-- Bloque de texto -->
+    <!-- Bloque con el texto que indica que selecciones -->
     <TextView
         android:id="@+id/instructionTextView"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:textColor="#FF0000"
         android:gravity="center"
         android:layout_margin="20dp"
-        android:text="Selecciona lo que quieres consultar"
+        android:text="@string/instruccion_seleccionar_animal"
         android:textSize="26dp" />
 
     <!-- RadioGroup con RadioButtons -->
@@ -42,26 +42,26 @@
         android:layout_marginBottom="150dp"
         android:padding="20dp">
 
-        <!-- RadioButton Carnívoros -->
+        <!-- RadioButton para Carnívoros -->
         <RadioButton
             android:id="@+id/radioCarnivores"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/lince"
             android:drawablePadding="10dp"
-            android:text="Carnívoros"
+            android:text="@string/radio_carnivoros"
             android:gravity="center_horizontal"
             android:layout_marginTop="25dp"
             android:textSize="20dp" />
 
-        <!-- RadioButton Rapaces y Carroñeros -->
+        <!-- RadioButton para Rapaces y Carroñeros -->
         <RadioButton
             android:id="@+id/radioBirds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/aguila"
             android:drawablePadding="10dp"
-            android:text="Rapaces y Carroñeros"
+            android:text="@string/radio_rapaces_y_carroñeros"
             android:gravity="center_horizontal"
             android:layout_marginTop="25dp"
             android:textSize="18dp" />

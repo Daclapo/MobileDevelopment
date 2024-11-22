@@ -1,3 +1,38 @@
 <resources>
-    <string name="app_name">FaunaIberica</string>
+    <!-- Títulos y descripciones principales -->
+    <string name="app_name">Fauna Ibérica</string>
+    <string name="titulo_fauna_iberica">Fauna Ibérica</string>
+    <string name="instruccion_seleccionar_animal">Selecciona lo que quieres consultar</string>
+    <string name="titulo_datos">Datos</string>
+    <string name="descripcion_animal">Descripción del animal</string>
+    <string name="titulo_carnivoros">Carnívoros</string>
+    <string name="titulo_rapaces_y_carroñeros">Rapaces y Carroñeros</string>
+    <string name="lista_carnivoros">Lista de Carnívoros</string>
+    <string name="lista_rapaces_y_carroñeros">Lista de Rapaces y Carroñeros</string>
+
+    <!-- RadioButton textos -->
+    <string name="radio_carnivoros">Carnívoros</string>
+    <string name="radio_rapaces_y_carroñeros">Rapaces y Carroñeros</string>
+
+    <!-- RadioButton carnivos -->
+    <string name="radio_comadreja">Comadreja</string>
+    <string name="radio_gineta">Gineta</string>
+    <string name="radio_nutria">Nutria Ibérica</string>
+    <string name="radio_lobo">Lobo Ibérico</string>
+    <string name="radio_zorro">Zorro</string>
+    <string name="radio_lince">Lince Ibérico</string>
+
+    <!-- RadioButton aves -->
+    <string name="radio_aguila">Águila Imperial</string>
+    <string name="radio_buho">Búho Real</string>
+    <string name="radio_cernicalo">Cernícalo</string>
+    <string name="radio_halcon">Halcón Peregrino</string>
+    <string name="radio_quebrantahuesos">Quebrantahuesos</string>
+    <string name="radio_buitre">Buitre Leonado</string>
+
+    <!-- Descripciones y mensajes adicionales para la actividad en la que se muestran las descripciones -->
+    <string name="mensaje_descripcion_animal"></string>
+    <string name="mensajeerror"></string>
+    <string name="error_default_text"></string>
+    <string name="fin">FIN</string>
 </resources>

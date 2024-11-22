@@ -1,15 +1,12 @@
 package dm2e.davidclarkson.faunaiberica;
 
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class MainActivityDatosAnimal extends AppCompatActivity {
@@ -21,41 +18,43 @@ public class MainActivityDatosAnimal extends AppCompatActivity {
 
         String animal = getIntent().getStringExtra("animal");
 
-        // Referencias a los elementos del layout
         TextView textView = findViewById(R.id.textViewDatosAnimal);
         ImageView imageView = findViewById(R.id.imageViewAnimal);
-        ScrollView scrollView = findViewById(R.id.scrollView);
 
-        // Leer archivo de texto del animal
-        String descripcion = readAnimalDescription(animal);
-        if (descripcion == null) {
-            descripcion = readAnimalDescription("error");
-            imageView.setImageResource(R.drawable.oso);  // Imagen por defecto (oso)
+        boolean hasText = doesAnimalHaveDescription(animal);
+
+        if (hasText) {
+            textView.setText(readAnimalDescription(animal));
+            imageView.setImageResource(getResources().getIdentifier(animal, "drawable", getPackageName()));
         } else {
-            // Asignar la imagen del animal
-            int resId = getResources().getIdentifier(animal, "drawable", getPackageName());
-            imageView.setImageResource(resId);
+            textView.setText(readAnimalDescription("mensajeerror"));
+            imageView.setImageResource(R.drawable.oso);
         }
-
-        // Mostrar los datos
-        textView.setText(descripcion);
     }
 
+
+    private boolean doesAnimalHaveDescription(String animal) {
+        int resId = getResources().getIdentifier(animal + "texto", "raw", getPackageName());
+        return resId != 0;
+    }
+
+
     private String readAnimalDescription(String animal) {
-        AssetManager assetManager = getAssets();
-        try {
-            // Intentamos abrir el archivo correspondiente
-            BufferedReader reader = new BufferedReader(new InputStreamReader(assetManager.open(animal + "texto.txt")));
-            StringBuilder stringBuilder = new StringBuilder();
+        int resId = getResources().getIdentifier(animal + "texto", "raw", getPackageName());
+        if (resId == 0) {
+            resId = getResources().getIdentifier("mensajeerror", "raw", getPackageName());
+        }
+
+        StringBuilder stringBuilder = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(getResources().openRawResource(resId)))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 stringBuilder.append(line).append("\n");
             }
-            reader.close();
-            return stringBuilder.toString();
-        } catch (IOException e) {
-            // Si no encuentra el archivo, devolver null
-            return null;
+        } catch (Exception e) {
+            stringBuilder.append(getString(R.string.error_default_text));
         }
+        return stringBuilder.toString().trim();
     }
 }

@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MainActivityCarnivoros.class);
             startActivity(intent);
         });
-
         radioBirds.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, MainActivityAves.class);
             startActivity(intent);
         });
+
     }
 }
