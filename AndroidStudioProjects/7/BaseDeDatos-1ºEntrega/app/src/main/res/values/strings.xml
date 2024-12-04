@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BaseDeDatos</string>
+
+    <string name="titulo">Base de Datos</string>
+
+
+    <string name="aniadir">Añadir Datos</string>
+    <string name="modificar">Modificar Datos</string>
+    <string name="borrar">Borrar Datos</string>
+    <string name="listartodos">Listar Todos los Registros</string>
+    <string name="listaruno">Listar un Registro Específico</string>
+    <string name="textborrar">Borrar</string>
+    <string name="borrar_hint">ID del Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="fecha_yyyy_mm_dd">Fecha (YYYY-MM-DD)</string>
+    <string name="nota">Nota</string>
+    <string name="guardar">Guardar</string>
+    <string name="id_del_registro">ID del Registro</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="id">ID</string>
+    <string name="resultado">Resultado</string>
+    <string name="buscar">Buscar</string>
+    <string name="titulo_modificar_registro">Modificar/Actualizar Registro</string>
+    <string name="titulo_eliminar_registro">Eliminar Registro</string>
+    <string name="titulo_crear_registro">Añadir/Crear Registro</string>
+    <string name="titulo_listado_todos">Listado de Todos los Registros</string>
+    <string name="titulo_buscar_registro">Buscar Registro por ID</string>
+</resources>
