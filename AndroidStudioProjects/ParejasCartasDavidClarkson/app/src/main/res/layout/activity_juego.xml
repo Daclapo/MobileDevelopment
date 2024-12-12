@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_cartas"
+        android:textColor="@color/white"
+        android:background="@color/grey"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNombreJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFA500"
+        android:textColor="#00008B"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:text="Jugador:" />
+
+    <TextView
+        android:id="@+id/tvIntentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:id="@+id/gridCartas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="10dp" />
+    </ScrollView>
+</LinearLayout>
+
+
