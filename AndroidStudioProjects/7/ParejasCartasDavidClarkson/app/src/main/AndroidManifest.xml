@@ -13,7 +13,10 @@
         android:theme="@style/Theme.ParejasCartasDavidClarkson"
         tools:targetApi="31">
         <activity
-            android:name=".JuegoActivity"
+            android:name=".RankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuegoActivityDos"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

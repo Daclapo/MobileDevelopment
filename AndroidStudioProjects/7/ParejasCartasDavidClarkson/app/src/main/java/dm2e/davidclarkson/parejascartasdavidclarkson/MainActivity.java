@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     if (nombre.isEmpty()) {
                         Toast.makeText(MainActivity.this, "Por favor, introduce tu nombre", Toast.LENGTH_SHORT).show();
                     } else {
-                        // Iniciar la segunda actividad
-                        Intent intent = new Intent(MainActivity.this, JuegoActivity.class);
+                        Intent intent = new Intent(MainActivity.this, JuegoActivityDos.class);
                         intent.putExtra("nombreJugador", nombre);
                         startActivity(intent);
                     }

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ParejasCartasDavidClarkson</string>
+    <string name="titulo_cartas">Catas_DavidClarksonPostigo</string>
+    <string name="ranking_puntuaciones">Ranking Puntuaciones</string>
+    <string name="jugador">Jugador:</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre:</string>
+    <string name="placeholder_introduce_tu_nombre">Introduce tu nombre</string>
+</resources>

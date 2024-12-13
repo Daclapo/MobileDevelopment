@@ -24,11 +24,11 @@
         android:textColor="#00008B"
         android:padding="8dp"
         android:textSize="18sp"
-        android:text="Jugador:" />
+        android:text="@string/jugador" />
 
     <TextView
         android:id="@+id/tvIntentos"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textSize="16sp" />
