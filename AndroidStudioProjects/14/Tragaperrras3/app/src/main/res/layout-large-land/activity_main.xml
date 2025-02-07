@@ -17,14 +17,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pulsaciones_default"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tv_puntuacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/puntuacion_default"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <View
@@ -46,20 +48,20 @@
 
             <ImageView
                 android:id="@+id/fruta1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/frutas_animacion1" />
 
             <ImageView
                 android:id="@+id/fruta2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/frutas_animacion2" />
 
             <ImageView
                 android:id="@+id/fruta3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/frutas_animacion3" />
         </LinearLayout>
 
@@ -71,16 +73,25 @@
 
             <Button
                 android:id="@+id/btn_jugar"
-                android:layout_width="120dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="@string/jugar" />
+                android:text="@string/jugar"
+                android:textSize="20sp"
+                android:padding="16dp"
+                android:backgroundTint="@color/verde"
+                />
+
 
             <Button
                 android:id="@+id/btn_parar"
-                android:layout_width="120dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/parar"
-                android:layout_marginStart="20dp" />
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:padding="16dp"
+                android:backgroundTint="@color/rojo"
+                />
         </LinearLayout>
     </LinearLayout>
 
